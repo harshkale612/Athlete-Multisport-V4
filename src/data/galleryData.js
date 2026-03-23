@@ -15,7 +15,7 @@ export const galleryData = [
         type: "image",
         alt: "Football flying into the top corner of the net under stadium lights.",
         description: "Curled free kick from 25 yards out in the derby.",
-        src: "https://images.unsplash.com/photo-1518605368461-1ee5e6319803?w=1000&auto=format&fit=crop&q=80"
+        src: "https://images.unsplash.com/photo-1543351611-58f69d7c1781?w=1000&auto=format&fit=crop&q=80"
     },
     {
         id: "img-football-2",
