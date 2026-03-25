@@ -13,6 +13,11 @@ const Footer = () => {
           <a href={athleteProfile.socialLinks?.instagram} target="_blank" rel="noreferrer" className="text-text-muted hover:text-primary text-sm font-bold uppercase tracking-widest transition-colors">Instagram</a>
         </div>
       </div>
+      <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 flex justify-center">
+        <p className="text-text-muted/50 text-[10px] uppercase tracking-[0.2em] font-medium">
+          Powered By <span className="text-text-muted/80 hover:text-primary transition-colors cursor-default">YouInSports</span>
+        </p>
+      </div>
     </footer>
   );
 };

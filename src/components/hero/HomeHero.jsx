@@ -28,7 +28,7 @@ const HomeHero = () => {
     >
       {/* Background grid texture & Glow orb */}
       <div className="absolute inset-0 bg-[url('https://transparenttextures.com/patterns/cubes.png')] opacity-[0.05] pointer-events-none mix-blend-overlay" />
-      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-[15%] -translate-y-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
 
       {/* Right Background Sub-container (Image & Gradients) */}
       <motion.div 
@@ -38,10 +38,10 @@ const HomeHero = () => {
         <img 
           src={athleteProfile.profileImage}
           alt={athleteProfile.name}
-          className="w-full h-full object-cover object-top opacity-60 lg:opacity-80"
+          className="w-full h-full object-cover object-top opacity-80 lg:opacity-100"
         />
         {/* Blending gradients */}
-        <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#0A0F1C] via-[#0A0F1C]/60 lg:via-[#0A0F1C]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#0A0F1C] via-[#0A0F1C]/40 lg:via-[#0A0F1C]/20 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#0A0F1C] to-transparent" />
       </motion.div>
 
@@ -50,7 +50,7 @@ const HomeHero = () => {
         {/* Left Content Panel */}
         <motion.div 
           style={{ y: textY }}
-          className="w-full lg:w-[55%] space-y-8 mt-24 lg:mt-0"
+          className="w-full lg:w-[50%] space-y-8 mt-24 lg:mt-0"
         >
           {/* Identity Badge */}
           <motion.div
@@ -71,7 +71,7 @@ const HomeHero = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-              className="text-6xl md:text-8xl lg:text-[7rem] xl:text-[8.5rem] font-black uppercase tracking-tighter leading-none"
+              className="text-6xl md:text-8xl lg:text-[7rem] xl:text-[7.5rem] font-black uppercase tracking-tighter leading-none"
               style={{
                 WebkitTextStroke: '2px rgba(255, 255, 255, 0.25)',
                 color: 'transparent'
@@ -83,7 +83,7 @@ const HomeHero = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              className="text-6xl md:text-8xl lg:text-[7rem] xl:text-[8.5rem] font-black uppercase tracking-tighter text-white leading-none -mt-4 md:-mt-8 lg:-mt-12 ml-4 md:ml-8 lg:ml-12 relative z-10 drop-shadow-2xl"
+              className="text-6xl md:text-8xl lg:text-[7rem] xl:text-[7.5rem] font-black uppercase tracking-tighter text-white leading-none -mt-1 md:-mt-2 lg:-mt-3 ml-2 md:ml-4 lg:ml-6 relative z-10 drop-shadow-2xl"
             >
               {athleteProfile.name.split(' ')[1] || ''}
             </motion.h1>
