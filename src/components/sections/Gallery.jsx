@@ -16,7 +16,7 @@ const Gallery = ({ sportKey }) => {
   if (previewImages.length === 0) return null;
 
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-background border-t border-white/5 relative overflow-hidden">
+    <section className="py-24 px-6 md:px-12 lg:px-24 bg-background border-t border-contrast-alpha/5 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -58,7 +58,7 @@ const Gallery = ({ sportKey }) => {
              animate={{ opacity: 1 }}
              exit={{ opacity: 0 }}
              onClick={() => setSelectedImage(null)}
-             className="fixed inset-0 z-50 bg-background/95 backdrop-blur-md flex items-center justify-center p-4 cursor-pointer"
+             className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 cursor-pointer"
            >
               <button 
                 onClick={(e) => { e.stopPropagation(); setSelectedImage(null); }}

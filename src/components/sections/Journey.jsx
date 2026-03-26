@@ -10,7 +10,7 @@ const Journey = ({ sportKey }) => {
   if (filteredTimeline.length === 0) return null;
 
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-surface/30 border-t border-white/5 relative overflow-hidden">
+    <section className="py-24 px-6 md:px-12 lg:px-24 bg-surface/30 border-t border-contrast-alpha/10 relative overflow-hidden">
       <div className="max-w-4xl mx-auto">
         <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -41,12 +41,12 @@ const Journey = ({ sportKey }) => {
                <div className="flex flex-col items-center h-full pt-2">
                  <div className="w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20 group-hover:scale-150 transition-transform" />
                  {idx !== filteredTimeline.length - 1 && (
-                    <div className="w-0.5 h-full bg-white/10 mt-2" />
+                    <div className="w-0.5 h-full bg-contrast-alpha/10 mt-2" />
                  )}
                </div>
 
                {/* Content */}
-               <div className="flex-1 bg-background/50 backdrop-blur-md p-8 rounded-3xl border border-white/5 group-hover:border-primary/50 transition-colors">
+               <div className="flex-1 bg-surface/50 backdrop-blur-md p-8 rounded-3xl border border-contrast-alpha/10 group-hover:border-primary/50 transition-colors">
                   <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-primary/20 text-primary uppercase tracking-widest mb-4">
                     {item.yearOrDate}
                   </span>

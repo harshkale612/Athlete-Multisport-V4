@@ -11,7 +11,7 @@ const Institutes = ({ sportKey }) => {
   if (filtered.length === 0) return null;
 
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-surface/30 border-t border-white/5 relative overflow-hidden">
+    <section className="py-24 px-6 md:px-12 lg:px-24 bg-surface/30 border-t border-contrast-alpha/10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -36,22 +36,22 @@ const Institutes = ({ sportKey }) => {
                whileInView={{ opacity: 1, scale: 1 }}
                viewport={{ once: true }}
                transition={{ duration: 0.5, delay: idx * 0.1 }}
-               className="bg-background/80 backdrop-blur-md border border-white/5 p-8 rounded-3xl group hover:border-primary/50 transition-colors"
+               className="bg-surface/50 backdrop-blur-md border border-contrast-alpha/10 p-8 rounded-3xl group hover:border-primary/50 transition-colors"
              >
                <div className="flex flex-col items-center text-center">
-                 <div className="w-20 h-20 rounded-full bg-surface-elevated flex items-center justify-center mb-6 p-4 shadow-inner border border-white/10 group-hover:bg-primary/20 transition-colors">
+                 <div className="w-20 h-20 rounded-full bg-surface-elevated flex items-center justify-center mb-6 p-4 shadow-inner border border-contrast-alpha/20 group-hover:bg-primary/20 transition-colors">
                    <Building size={32} className="text-primary" />
                  </div>
                  <h3 className="text-2xl font-bold font-display leading-tight mb-2 text-text group-hover:text-primary transition-colors">
                    {inst.name}
                  </h3>
-                 <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-white/5 text-text-muted border border-white/10 mb-4">
+                 <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-contrast-alpha/5 text-text-muted border border-contrast-alpha/20 mb-4">
                    {inst.type}
                  </span>
                  <p className="text-sm text-text-muted leading-relaxed mb-4 line-clamp-3">
                    {inst.description}
                  </p>
-                 <div className="text-[10px] text-text-subtle font-mono uppercase border-t border-white/10 pt-4 w-full">
+                 <div className="text-[10px] text-text-subtle font-mono uppercase border-t border-contrast-alpha/20 pt-4 w-full">
                    {inst.yearStart} - {inst.yearEnd}
                  </div>
                </div>

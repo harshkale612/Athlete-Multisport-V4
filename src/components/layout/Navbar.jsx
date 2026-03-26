@@ -59,7 +59,7 @@ const Navbar = () => {
             </div>
 
             {/* Theme Toggle */}
-            <div className="flex bg-surface/50 border border-white/10 rounded-full p-1 backdrop-blur-sm">
+            <div className="flex bg-surface/50 border border-contrast-alpha/10 rounded-full p-1 backdrop-blur-sm">
               <button 
                 onClick={() => toggleTheme('dark-cinematic')}
                 className={`p-2 rounded-full transition-colors ${theme === 'dark-cinematic' ? 'bg-primary text-white' : 'text-text-muted hover:text-text'}`}
@@ -112,7 +112,7 @@ const Navbar = () => {
                  </Link>
                ))}
                
-               <div className="mt-8 flex gap-4 bg-surface rounded-full p-2 border border-white/10">
+               <div className="mt-8 flex gap-4 bg-surface rounded-full p-2 border border-contrast-alpha/10">
                  <button 
                   onClick={() => toggleTheme('dark-cinematic')}
                   className={`p-3 rounded-full ${theme === 'dark-cinematic' ? 'bg-primary text-white' : 'text-text-muted'}`}

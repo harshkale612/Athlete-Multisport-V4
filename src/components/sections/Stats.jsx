@@ -9,7 +9,7 @@ const Stats = ({ sportKey }) => {
   if (sportStats.length === 0) return null;
 
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-background border-t border-white/5 relative overflow-hidden">
+    <section className="py-24 px-6 md:px-12 lg:px-24 bg-background border-t border-contrast-alpha/10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -34,9 +34,9 @@ const Stats = ({ sportKey }) => {
                whileInView={{ opacity: 1, scale: 1 }}
                viewport={{ once: true }}
                transition={{ duration: 0.5, delay: idx * 0.1 }}
-               className="bg-surface/30 backdrop-blur-md border border-white/5 p-8 rounded-3xl flex flex-col items-center justify-center text-center hover:bg-surface/50 hover:border-primary/50 transition-colors group"
+               className="bg-surface/50 backdrop-blur-md border border-contrast-alpha/10 p-8 rounded-3xl flex flex-col items-center justify-center text-center hover:bg-surface/70 hover:border-primary/50 transition-colors group"
              >
-               <span className="text-5xl md:text-6xl font-black font-mono text-white mb-2 group-hover:text-primary transition-colors">{stat.value}</span>
+               <span className="text-5xl md:text-6xl font-black font-mono text-text mb-2 group-hover:text-primary transition-colors">{stat.value}</span>
                <span className="text-xs uppercase tracking-widest text-text-subtle font-bold">{stat.label}</span>
              </motion.div>
           ))}

@@ -35,7 +35,7 @@ const SportsOverview = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group"
             >
-              <Link to={`/sport/${sport.id}`} className="block h-full relative rounded-[2rem] overflow-hidden border border-white/10 hover:border-primary/50 transition-colors">
+              <Link to={`/sport/${sport.id}`} className="block h-full relative rounded-[2rem] overflow-hidden border border-contrast-alpha/10 hover:border-primary/50 transition-colors">
                 
                 {/* Background Image Container */}
                 <div className="aspect-[4/5] w-full relative">
@@ -44,7 +44,7 @@ const SportsOverview = () => {
                     alt={sport.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
                 </div>
 
                 {/* Content Overlay */}
@@ -59,7 +59,7 @@ const SportsOverview = () => {
                       </p>
                     </div>
                     
-                    <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center group-hover:bg-primary transition-colors border border-white/20">
+                    <div className="w-12 h-12 rounded-full bg-surface/50 backdrop-blur-md flex items-center justify-center group-hover:bg-primary transition-colors border border-contrast-alpha/20">
                       <ChevronRight size={24} className="text-white group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>

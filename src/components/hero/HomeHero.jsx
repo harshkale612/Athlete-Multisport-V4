@@ -45,7 +45,7 @@ const HomeHero = () => {
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#0A0F1C] to-transparent" />
       </motion.div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center lg:justify-between pt-32 pb-16">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center lg:justify-between min-h-[100vh] pt-32 pb-16">
         
         {/* Left Content Panel */}
         <motion.div 
@@ -57,7 +57,7 @@ const HomeHero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex items-center gap-3 border border-white/10 rounded-full px-4 py-2 w-max bg-white/5 backdrop-blur-md"
+            className="flex items-center gap-3 border border-contrast-alpha/20 rounded-full px-4 py-2 w-max bg-contrast-alpha/5 backdrop-blur-md"
           >
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-[#94A3B8]">
@@ -116,7 +116,7 @@ const HomeHero = () => {
               onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
               className="flex items-center justify-center gap-4 text-xs font-bold tracking-wide text-[#94A3B8] hover:text-white transition-colors group/play uppercase"
             >
-              <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center transition-colors bg-white/5 group-hover/play:bg-white/20 group-hover/play:border-white">
+              <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center transition-colors bg-contrast-alpha/5 group-hover/play:bg-white/20 group-hover/play:border-white">
                 <Play size={14} fill="currentColor" />
               </div> 
               WATCH SHOWREEL
@@ -153,7 +153,7 @@ const HomeHero = () => {
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-            className="mt-16 lg:mt-0 lg:absolute lg:bottom-10 lg:right-10 z-20 flex flex-col items-center gap-3 p-4 rounded-3xl bg-surface/5 backdrop-blur-md border border-white/10 shadow-2xl w-full sm:w-[200px] max-w-[90vw]"
+            className="relative mt-16 lg:mt-0 lg:absolute lg:bottom-10 lg:right-10 z-[50] flex flex-col items-center gap-3 p-4 rounded-3xl bg-surface/5 backdrop-blur-md border border-contrast-alpha/20 shadow-2xl w-full sm:w-[200px] max-w-[90vw]"
         >
             <div className="w-full aspect-square bg-white p-2 rounded-xl shadow-inner flex items-center justify-center transition-transform hover:scale-105 duration-500">
                 <img
@@ -169,7 +169,7 @@ const HomeHero = () => {
               </span>
               <button 
                 onClick={() => window.open('https://youinsports.com', '_blank')}
-                className="w-full relative overflow-hidden bg-primary group/qr text-white text-[9px] md:text-[10px] font-bold py-3 px-3 rounded-xl flex items-center justify-center transition-colors tracking-wide shadow-lg border border-white/10"
+                className="w-full relative overflow-hidden bg-primary group/qr text-white text-[9px] md:text-[10px] font-bold py-3 px-3 rounded-xl flex items-center justify-center transition-colors tracking-wide shadow-lg border border-contrast-alpha/20"
               >
                 {/* Embedded subtle inner hover gradient wipe */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] skew-x-[30deg] opacity-0 group-hover/qr:opacity-100 group-hover/qr:animate-[swipe_1s_ease-in-out_infinite]" />

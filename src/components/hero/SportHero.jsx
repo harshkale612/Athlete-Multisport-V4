@@ -16,7 +16,7 @@ const SportHero = ({ sportKey }) => {
           alt={`${sport.name} Hero`}
           className="w-full h-full object-cover opacity-60"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between gap-12">
@@ -40,11 +40,11 @@ const SportHero = ({ sportKey }) => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex gap-6 max-w-md w-full bg-surface/30 backdrop-blur-xl border border-white/10 p-6 rounded-3xl"
+            className="flex gap-6 max-w-md w-full bg-surface/30 backdrop-blur-xl border border-contrast-alpha/20 p-6 rounded-3xl"
         >
           {sportStats.slice(0, 2).map((stat, idx) => (
-             <div key={idx} className="flex-1 border-r last:border-0 border-white/10 px-4 first:pl-0 last:pr-0">
-               <span className="text-4xl font-black text-white block mb-1 font-mono">{stat.value}</span>
+             <div key={idx} className="flex-1 border-r last:border-0 border-contrast-alpha/20 px-4 first:pl-0 last:pr-0">
+               <span className="text-4xl font-black text-text block mb-1 font-mono">{stat.value}</span>
                <span className="text-xs uppercase tracking-widest text-text-subtle font-bold">{stat.label}</span>
              </div>
           ))}

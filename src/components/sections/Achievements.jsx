@@ -15,7 +15,7 @@ const Achievements = ({ sportKey }) => {
   if (dataToDisplay.length === 0) return null;
 
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-surface/30 relative overflow-hidden">
+    <section className="py-24 px-6 md:px-12 lg:px-24 bg-surface/30 border-t border-contrast-alpha/10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -43,15 +43,15 @@ const Achievements = ({ sportKey }) => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="bg-background/80 backdrop-blur-md border border-white/5 p-6 rounded-[2rem] hover:-translate-y-2 hover:border-primary/50 transition-all duration-300 relative group"
+                className="bg-surface/50 backdrop-blur-md border border-contrast-alpha/10 p-6 rounded-[2rem] hover:-translate-y-2 hover:border-primary/50 transition-all duration-300 relative group"
               >
-                 <div className="w-12 h-1 bg-white/10 mb-6 group-hover:bg-primary transition-colors" />
+                 <div className="w-12 h-1 bg-contrast-alpha/10 mb-6 group-hover:bg-primary transition-colors" />
                  
                  <div className="flex justify-between items-start mb-6">
-                   <div className="p-3 rounded-full bg-surface border border-white/10 group-hover:bg-primary/20 transition-colors">
+                   <div className="p-3 rounded-full bg-surface border border-contrast-alpha/20 group-hover:bg-primary/20 transition-colors">
                      <Icon size={24} className="text-primary" />
                    </div>
-                   <span className="text-3xl font-black font-mono text-white/5 pointer-events-none select-none group-hover:text-white/10 transition-colors">
+                   <span className="text-3xl font-black font-mono text-contrast-alpha/5 pointer-events-none select-none group-hover:text-contrast-alpha/10 transition-colors">
                      {item.year}
                    </span>
                  </div>

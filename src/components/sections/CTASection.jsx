@@ -5,7 +5,7 @@ import { athleteProfile } from '../../data/athleteProfile';
 
 const CTASection = () => {
   return (
-    <section className="py-32 px-6 md:px-12 lg:px-24 bg-background border-t border-white/5 relative overflow-hidden flex items-center justify-center">
+    <section className="py-32 px-6 md:px-12 lg:px-24 bg-background border-t border-contrast-alpha/10 relative overflow-hidden flex items-center justify-center">
       {/* Glow Effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
 

@@ -25,6 +25,7 @@ export default {
         cricket: "rgb(var(--color-cricket) / <alpha-value>)",
         basketball: "rgb(var(--color-basketball) / <alpha-value>)",
         tennis: "rgb(var(--color-tennis) / <alpha-value>)",
+        "contrast-alpha": "rgb(var(--color-contrast-alpha) / <alpha-value>)",
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

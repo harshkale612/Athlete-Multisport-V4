@@ -14,7 +14,7 @@ const Posts = ({ sportKey }) => {
   if (publicPosts.length === 0) return null;
 
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-background border-t border-white/5 relative overflow-hidden">
+    <section className="py-24 px-6 md:px-12 lg:px-24 bg-background border-t border-contrast-alpha/10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
@@ -54,13 +54,13 @@ const Posts = ({ sportKey }) => {
                whileInView={{ opacity: 1, y: 0 }}
                viewport={{ once: true }}
                transition={{ duration: 0.5, delay: index * 0.1 }}
-               className="bg-surface/30 backdrop-blur-md border border-white/5 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors group cursor-pointer"
+               className="bg-surface/50 backdrop-blur-md border border-contrast-alpha/10 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors group cursor-pointer"
              >
                 {/* Image */}
-                <div className="aspect-square w-full relative overflow-hidden border-b border-white/5">
+                <div className="aspect-square w-full relative overflow-hidden border-b border-contrast-alpha/10">
                   <img src={post.image} alt={post.caption} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <div className="absolute inset-x-0 bottom-0 top-1/2 bg-gradient-to-t from-background/90 via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                     <p className="text-white text-sm line-clamp-3 leading-relaxed drop-shadow-lg">{post.caption}</p>
+                  <div className="absolute inset-x-0 bottom-0 top-1/2 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                     <p className="text-text text-sm line-clamp-3 leading-relaxed drop-shadow-lg">{post.caption}</p>
                   </div>
                 </div>
 
