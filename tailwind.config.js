@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -28,8 +27,8 @@ export default {
         "contrast-alpha": "rgb(var(--color-contrast-alpha) / <alpha-value>)",
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        display: ['Syne', 'sans-serif'],
+        sans: ['var(--font-inter)', 'Inter', 'sans-serif'],
+        display: ['var(--font-syne)', 'Syne', 'sans-serif'],
       },
       backgroundImage: {
         'hero-gradient': 'radial-gradient(circle at center, rgb(var(--color-primary) / 0.15) 0%, rgb(var(--color-background) / 0) 70%)',
@@ -57,30 +56,23 @@ export default {
           '50%': { transform: 'translateY(-10px)' },
         },
         'pulse-glow': {
-          '0%, 100%': { opacity: 0.6, transform: 'scale(1)' },
-          '50%': { opacity: 1, transform: 'scale(1.05)' },
+          '0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
+          '50%': { opacity: '1', transform: 'scale(1.05)' },
         },
         fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { opacity: 0, transform: 'translateY(20px)' },
-          '100%': { opacity: 1, transform: 'translateY(0)' },
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         slideDown: {
-          '0%': { opacity: 0, transform: 'translateY(-20px)' },
-          '100%': { opacity: 1, transform: 'translateY(0)' },
+          '0%': { opacity: '0', transform: 'translateY(-20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
-      },
-      transitionDuration: {
-        'theme': '600ms',
-      },
-      transitionTimingFunction: {
-        'theme': 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
     },
   },
   plugins: [],
-}
-
+};
