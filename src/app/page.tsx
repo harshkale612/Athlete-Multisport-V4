@@ -45,9 +45,11 @@ export default function HomePage() {
         <meta itemProp="description" content="Harsh Kale is a multi-disciplinary athlete excelling in Chess, Football, Cricket, Basketball, and Tennis." />
 
         {/* Hero — above the fold */}
+        {/*
         <header>
           <HomeHero />
         </header>
+        */}
 
         {/* AI-Readable Summary — server-rendered, immediately crawlable */}
         <AthleteAISummary />

@@ -75,9 +75,11 @@ export default async function AthletePage({
         <meta itemProp="name" content={athleteProfile.name} />
         <meta itemProp="jobTitle" content="Multi-Sport Athlete" />
 
+        {/*
         <header>
           <HomeHero />
         </header>
+        */}
 
         <AthleteAISummary />
 

@@ -105,9 +105,11 @@ export default async function SportPage({
           </ul>
         </div>
 
+        {/*
         <header>
           <SportHero sportKey={sportKey} />
         </header>
+        */}
 
         <section aria-label={`${sport.name} statistics`}>
           <Stats sportKey={sportKey} />
